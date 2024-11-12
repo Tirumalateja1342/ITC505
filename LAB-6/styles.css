@@ -1,0 +1,119 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px; /* Sidebar, Main Content, Advertisement */
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    grid-template-areas: 
+        "header header header"
+        "sidebar main-content advertisement"
+        "footer footer footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #a8fec5;
+    color: rgb(67, 139, 99);
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling for the input boxes and buttons */
+.input-box {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.sort-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.sort-button:hover {
+    background-color: #45a049;
+}
+
+.output-box {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Styling for the output section (to show the array in boxes) */
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Highlight colors */
+.highlight-comparing {
+    background-color: #fecc04; /* Yellow for comparing */
+}
+
+.highlight-swapped {
+    background-color: #b30909; /* Red for swapping */
+}
+
+.highlight-sorted {
+    background-color: #00FF00; /* Green for sorted */
+}
+
+.highlight-neutral {
+    background-color: #e3f284; /* Light gray for non-active elements */
+}

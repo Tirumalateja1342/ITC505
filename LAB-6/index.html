@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>My Website</h1>
+            <p>Welcome to my site</p>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>Interactive JavaScript Code</h2>
+            <div id="interactive-section">
+                <p>Enter some numbers (separated by commas):</p>
+                <input type="text" id="numberInput" class="input-box" placeholder="e.g., 12, 7, 29, 3" />
+                <button id="sortButton" class="sort-button">Sort Numbers</button>
+            </div>
+
+            <div id="outputSection">
+                <h3>Sorting Process:</h3>
+                <div id="output"></div> <!-- Output for sorting process -->
+            </div>
+        </main>
+
+        <!-- Advertisement -->
+        <aside class="advertisement">
+            <a href="https://www.amazon.com/Outroad-Mountain-Bicycle-Suspension-Anti-Slip/dp/B09T2TZY4R/ref=sr_1_1_sspa?crid=2QSORGFKIFJK5&dib=eyJ2IjoiMSJ9.wJfSbiWefZs-o3pQi4wlevDQoIetvXodueYiOLsBiXIjljZU92OkaTkclFfeNelL3D4JJBtS-xJRDD34BofwGNlrkQVP0jwPb4FwXtMUM81aqOyzehluMYJ3t3SX-lULaknx8BEVlQVQ_GrjCjy5Zfe9hu-hZPUJe38FUix4Vk5ccGGE-OTuWQq-bm_Hw_IUY2ABMK8cMquoKf9vZLmQi1-h-Xx1kVJgKp2FGfU50vo.gJaf3ey1y9QPYAQt4atIvloIJ7XxRh9DGypivjeKeAg&dib_tag=se&keywords=cycles%2Bfor%2Bmen&qid=1730945331&sprefix=cycles%2Bfor%2Bmen%2Caps%2C142&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+                <img src="D:\cycle.jpg" />
+            </a>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <p>Last updated: <span id="lastModified"></span></p>
+            <script type="text/javascript">
+                var x = document.lastModified;
+                document.getElementById('lastModified').textContent = x;
+            </script>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking to external JS -->
+</body>
+</html>
