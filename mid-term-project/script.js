@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 { text: "Investigate the distress signal", next: "distressSignal" },
                 { text: "Ignore and return to the ship", next: "returnShip" }
             ],
-            image: "images/planet_landing.jpg"
+            image: "images/planet_landing.jpeg"
         },
         asteroidField: {
             text: "You enter the asteroid field, but your ship takes some damage. Do you try to repair it or escape?",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 { text: "Repair the ship", next: "repairShip" },
                 { text: "Escape the field", next: "escapeField" }
             ],
-            image: "images/asteroid_field.jpg"
+            image: "images/asteroid_field.jpg!bw700"
         },
         alienEncounter: {
             text: "The aliens have detected your ship! Do you fight them or try to negotiate peace?",
