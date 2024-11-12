@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Space Exploration Adventure</h1>
+    </header>
+
+    <main id="gameContainer">
+        <div id="storyText"></div>
+        <div id="choices"></div>
+        <div id="gameImage">
+            <img id="image" src="" alt="Game Image" style="width: 100%; height: auto;">
+        </div>
+    </main>
+    <script src="script.js"> </script>
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <script type="text/javascript">
+            // Set last updated time
+            var x = document.lastModified;
+            document.getElementById('lastModified').textContent = x;
+        </script>
+    </footer>
+</body>
+</html>
