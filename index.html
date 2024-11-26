@@ -1,0 +1,23 @@
+server.post('/ITC505/lab-7/index.html', (req, res) => {
+    const { adjective, pluralNoun, verb, place, emotion } = req.body;
+
+    // Check if all fields are filled
+    if (!adjective || !pluralNoun || !verb || !place || !emotion) {
+        res.send(`
+            <h1>Submission Failed</h1>
+            <p>Please fill out ALL fields.</p>
+            <a href="/ITC505/lab-7/index.html">Go Back to Form</a>
+        `);
+        return;
+    }
+
+    // Create the mad lib story
+    const madLib = `One day, a ${adjective} ${pluralNoun} ${verb} to the ${place} and felt very ${emotion}.`;
+
+    // Send the response
+    res.send(`
+        <h1>Your Mad Lib Story</h1>
+        <p>${madLib}</p>
+        <a href="/ITC505/lab-7/index.html">Create Another Mad Lib</a>
+    `);
+});
