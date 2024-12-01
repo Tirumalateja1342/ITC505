@@ -1,7 +1,7 @@
 document.getElementById('secureForm').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent default form submission for validation
 
-    // Clear previous error messages 
+    // Clear previous error messages
     const errors = document.querySelectorAll('.error');
     errors.forEach(error => error.textContent = '');
 
