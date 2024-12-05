@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lights Out Game</h1>
+    <div id="game-board"></div>
+
+    <div id="game-info">
+        <div>Time: <span id="time">0</span>s</div>
+        <div>Target Moves: <span id="target">10</span></div>
+        <button id="new-game-button">New Game</button>
+        <button id="addendum-button">Addendum</button>
+    </div>
+
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p><strong>Development Process:</strong> The game was developed by first understanding the core mechanics of Lights Out...</p>
+        <ul>
+            <li><strong>Ensuring Solvability:</strong> Random clicks were simulated on a solved board...</li>
+            <li><strong>Toggle Logic:</strong> Efficient logic for toggling a tile and its neighbors...</li>
+            <li><strong>Dynamic Board Creation:</strong> Scalable board size adjustments in JavaScript...</li>
+        </ul>
+        <p><strong>Insights and Learnings:</strong> This project reinforced concepts in DOM manipulation...</p>
+        <p><strong>Future Improvements:</strong> Allow user-selected board size, animations, and more...</p>
+    </section>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
